@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 
-/**
- * Login page for the CTF challenge
- * This provides a realistic login interface that redirects to the protected endpoint
- */
 export default function Home() {
   const router = useRouter()
   const [username, setUsername] = useState('')
@@ -12,7 +8,7 @@ export default function Home() {
 
   const handleLogin = (e) => {
     e.preventDefault()
-    // Redirect to the protected API endpoint
+
     router.push('/api/hacker')
   }
 
