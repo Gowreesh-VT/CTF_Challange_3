@@ -5,7 +5,7 @@ export function middleware(request) {
   if (request.nextUrl.pathname === '/api/hacker') {
     
 
-    const authHeader = request.headers.get('x-vvortex-auth')
+    const authHeader = request.headers.get('x-middleware-subrequest')
 
     if (authHeader === 'middleware') {
       console.log('[MIDDLEWARE] ✅ Access granted - header validated')
