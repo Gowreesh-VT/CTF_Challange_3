@@ -150,7 +150,7 @@ This application demonstrates a critical security flaw:
 
 ```bash
 curl -i http://localhost:3000/api/hacker \
-  -H "x-middleware-subrequest: middleware"
+  -H "x-vvortex-auth: middleware"
 ```
 
 ### Expected Success Response
