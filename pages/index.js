@@ -43,7 +43,7 @@ export default function Home() {
             🔐 SECURE LOGIN
           </h1>
           <p style={{ color: '#ff6b6b', fontSize: '0.85rem', marginTop: '5px' }}>
-            ADMIN ACCESS PORTAL
+            HACKER ACCESS PORTAL
           </p>
           <div style={{
             width: '60px',
@@ -150,7 +150,7 @@ export default function Home() {
               e.target.style.transform = 'translateY(0)'
             }}
           >
-            Access Admin Panel
+            Access Hacker Panel
           </button>
         </form>
 
@@ -161,28 +161,6 @@ export default function Home() {
           borderTop: '1px solid #2a2a3e',
           textAlign: 'center'
         }}>
-          <p style={{ 
-            color: '#666', 
-            fontSize: '0.75rem',
-            marginBottom: '8px'
-          }}>
-            🎯 CTF Challenge: Middleware Bypass
-          </p>
-          <p style={{ 
-            color: '#888', 
-            fontSize: '0.7rem',
-            lineHeight: '1.4'
-          }}>
-            CVE-2025-29927 (Inspired) | Authentication Bypass
-          </p>
-          <p style={{ 
-            color: '#ff6b6b', 
-            fontSize: '0.7rem',
-            marginTop: '10px',
-            fontStyle: 'italic'
-          }}>
-            💡 Hint: Browser login won't work... try curl
-          </p>
         </div>
       </div>
     </div>
