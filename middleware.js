@@ -17,11 +17,6 @@ import { NextResponse } from 'next/server'
  * - In reality, ANY client (curl, browser, etc.) can set this header
  * - There is NO cryptographic verification or secret validation
  * - This represents a complete authentication bypass
- * 
- * REAL-WORLD CONTEXT:
- * This mirrors CVE-2025-29927 where Next.js middleware trusted internal
- * headers that could be spoofed by attackers, leading to authentication
- * bypass vulnerabilities in production applications.
  */
 
 export function middleware(request) {
@@ -29,10 +24,10 @@ export function middleware(request) {
   if (request.nextUrl.pathname === '/api/hacker') {
     
     // VULNERABILITY: Trusting a client-controllable header for authentication
-    const authHeader = request.headers.get('x-internal-auth')
+    const authHeader = request.headers.get('middleware')
     
     // Check if the header matches the expected "secret" value
-    if (authHeader === 'internal-bypass-2025') {
+    if (authHeader === 'middleware') {
       // BYPASS SUCCESSFUL: Allow request to proceed to the API handler
       console.log('[MIDDLEWARE] ✅ Access granted - header validated')
       return NextResponse.next()
