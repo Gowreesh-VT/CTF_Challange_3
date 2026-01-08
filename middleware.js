@@ -11,9 +11,6 @@ import { NextResponse } from 'next/server'
  * 
  * HOW IT WORKS:
  * - All requests to /api/hacker are intercepted by this middleware
- * - The middleware checks for the "x-middleware-subrequest" header
- * - If the header value is "middleware", access is granted
- * - If not, a 401 Unauthorized response is returned
  * 
  * WHY THIS IS VULNERABLE:
  * - The middleware assumes only internal/trusted requests have this header
@@ -32,10 +29,10 @@ export function middleware(request) {
   if (request.nextUrl.pathname === '/api/hacker') {
     
     // VULNERABILITY: Trusting a client-controllable header for authentication
-    const subrequestHeader = request.headers.get('x-middleware-subrequest')
+    const authHeader = request.headers.get('x-internal-auth')
     
     // Check if the header matches the expected "secret" value
-    if (subrequestHeader === 'middleware') {
+    if (authHeader === 'internal-bypass-2025') {
       // BYPASS SUCCESSFUL: Allow request to proceed to the API handler
       console.log('[MIDDLEWARE] ✅ Access granted - header validated')
       return NextResponse.next()
