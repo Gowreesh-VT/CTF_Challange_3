@@ -73,6 +73,7 @@ Content-Type: application/json
 Find a way to bypass the middleware and receive:
 - HTTP 200 status code
 - The CTF flag in the JSON response
+- No backend code changes
 
 ---
 
