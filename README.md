@@ -1,6 +1,6 @@
 # 🚨 CTF Challenge: Next.js Middleware Authentication Bypass
 
-**Difficulty:** Easy  
+**Difficulty:** Easy (Intro)  
 **Category:** Web Security  
 **CVE Reference:** CVE-2025-29927 (Inspired)
 
