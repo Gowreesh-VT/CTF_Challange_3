@@ -169,6 +169,8 @@ curl -i http://localhost:3000/api/hacker \
 }
 ```
 
+
+
 ### How It Works
 
 1. The middleware intercepts requests to `/api/hacker`
