@@ -89,7 +89,7 @@ The middleware is checking for something in the HTTP request. What does middlewa
 <details>
 <summary>Hint 2 (Click to reveal)</summary>
 
-Look at the middleware code. It's checking for a specific HTTP header. What header might it be trusting?
+Look at the middleware code in middleware.js. It's checking for a specific HTTP header. What header might it be trusting?
 
 </details>
 
