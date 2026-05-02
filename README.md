@@ -54,7 +54,7 @@ npm start
 
 ## 🧪 Testing the Challenge
 
-### Initial Attempt (Will Fail)
+### Initial Attempt (Expected to Fail)
 
 ```bash
 curl -i http://localhost:3000/api/hacker
