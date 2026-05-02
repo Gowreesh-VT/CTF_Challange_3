@@ -25,7 +25,7 @@ Retrieve the CTF flag by bypassing the middleware authentication without modifyi
 ## 🛠️ Setup Instructions
 
 ### Prerequisites
-- Node.js 16+ and npm installed
+- Node.js 16+ and npm installed (18+ recommended)
 - Terminal with curl (or any HTTP client)
 
 ### Installation
