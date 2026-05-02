@@ -252,6 +252,7 @@ CTF_Challange_3/
 - [Next.js Middleware Documentation](https://nextjs.org/docs/app/building-your-application/routing/middleware)
 - [OWASP Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
 - [CVE-2025-29927 Advisory](https://nvd.nist.gov/) (Reference for educational context)
+- [MDN: HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
 
 ---
 
